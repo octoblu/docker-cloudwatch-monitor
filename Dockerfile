@@ -11,4 +11,6 @@ RUN wget http://aws-cloudwatch.s3.amazonaws.com/downloads/CloudWatchMonitoringSc
   unzip CloudWatchMonitoringScripts-1.2.1.zip && \
   rm CloudWatchMonitoringScripts-1.2.1.zip
 
-CMD cd aws-scripts-mon && ./mon-put-instance-data.pl --mem-util --mem-used --mem-avail --auto-scaling=only
+WORKDIR aws-scripts-mon
+
+CMD ./mon-put-instance-data.pl --mem-util --mem-used --mem-avail --auto-scaling=only
