@@ -13,4 +13,4 @@ RUN wget http://aws-cloudwatch.s3.amazonaws.com/downloads/CloudWatchMonitoringSc
 
 WORKDIR aws-scripts-mon
 
-CMD ./mon-put-instance-data.pl --mem-util --mem-used --mem-avail --auto-scaling=only
+CMD ./mon-put-instance-data.pl --mem-util --mem-used --mem-avail --auto-scaling
