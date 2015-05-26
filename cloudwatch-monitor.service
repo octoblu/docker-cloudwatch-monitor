@@ -8,4 +8,7 @@ TimeoutStartSec=10
 ExecStartPre=-/usr/bin/docker kill cloudwatch-monitor
 ExecStartPre=-/usr/bin/docker rm octoblu/cloudwatch-monitor
 ExecStartPre=/usr/bin/docker pull octoblu/cloudwatch-monitor
-ExecStart=/usr/bin/docker run --name cloudwatch-monitor octoblu/cloudwatch-monitor
+ExecStart=/usr/bin/docker run \
+  --name cloudwatch-monitor \
+  --privileged \
+  octoblu/cloudwatch-monitor
