@@ -2,7 +2,8 @@
 Description=Run CloudWatch monitor every minute
 
 [Timer]
-OnCalendar=1 minute
+OnBootSec=3 minutes
+OnUnitActiveSec=1 minute
 
 [Install]
 WantedBy=timers.target
