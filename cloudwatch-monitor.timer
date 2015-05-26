@@ -1,0 +1,8 @@
+[Unit]
+Description=Run CloudWatch monitor every minute
+
+[Timer]
+OnCalendar=1 minute
+
+[Install]
+WantedBy=timers.target
