@@ -7,3 +7,6 @@ OnUnitActiveSec=1 minute
 
 [Install]
 WantedBy=timers.target
+
+[X-Fleet]
+Global=true
