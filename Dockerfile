@@ -16,4 +16,4 @@ WORKDIR aws-scripts-mon
 CMD ./mon-put-instance-data.pl \
   --mem-util --mem-used --mem-avail \
   --disk-path=/ --disk-space-util --disk-space-avail --disk-space-used \
-  --auto-scaling --verbose
+  --auto-scaling
